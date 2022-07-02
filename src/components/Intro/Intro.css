@@ -93,11 +93,9 @@
   filter: blur(72px);
 }
 .pic{
-  height:330px;
-  width:270px;
-  margin-top: 2%;
-  border-radius:10px;
-  text-align: center;
+  height:365px;
+  width:360px;
+  border-bottom-right-radius: 25%;
 }
 
 @media screen and (max-width: 480px) {

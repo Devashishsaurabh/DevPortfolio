@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -53,6 +52,12 @@ const Works = () => {
           <div className="w-secCircle">
             <img width="150px"src="https://camo.githubusercontent.com/356e03fa92213fc2da40d28b9cc64ae191c16cc81d518ad3b683aa42db828ee8/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a79745273586e6a5549646276796379655a5a673668412e706e67" alt="" />
           </div>{" "}
+          <div className="w-secCircle">
+            <img width="150px"src="https://upload.wikimedia.org/wikipedia/commons/1/13/YOUTUBE_LOGO.png" alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img width="140px"src="https://camo.githubusercontent.com/3ffeeb909e0da9579263d2243605cc7b1fecff9fb3f686bffb7dc002c39120d7/68747470733a2f2f692e696d6775722e636f6d2f3141324834376c2e706e67" alt="" />
+          </div>
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>

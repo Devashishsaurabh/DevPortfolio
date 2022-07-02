@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/boy1.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -11,7 +11,9 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import instagram from "../../img/instagram.png";
 import { Link } from "react-scroll";
+import Resume from './Resume.pdf';
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -29,20 +31,18 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Dev Ashish Saurabh</span>
           <span style={{fontWeight:"700",fontFamily:"sans-serif",fontSize:"18px"}}>
-          Full Stack Web Developer proﬁcient in fundamental Front-end languages and Back-end languages.
-          <br/> 
-          In-depth knowledge of Data Structure & Algorithms, Html, JavaScript, MongoDB, Mern, and Node.js. 
-          <br/>
-          Hardworking collaborator with a track record of superior results. 
+          Full Stack Web Developer proﬁcient in <br/>fundamental Front-end languages and Back-end languages.
+          
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
+        <a href={Resume} download>
+          <button className="button s-button" style={{width:"fit-content"}}>Download Resume</button>
+        </a>
         {/* social icons */}
         <div className="i-icons">
           <a href="https://github.com/Devashishsaurabh" target="_blank"><img src={Github} alt="" /></a>
           <a href="https://www.linkedin.com/in/dev-ashish-saurabh/" target="_blank"><img src={LinkedIn} alt="" /></a>
+          <a href="https://www.instagram.com/devashish_saurabh_official" target="_blank"><img src={instagram} alt=""/></a>
         </div>
       </div>
       {/* right image side */}

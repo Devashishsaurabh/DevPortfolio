@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
+import youtube from "../../img/youtube.png"
+import weather from "../../img/weather.png"
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import Link from "@iconscout/react-unicons/icons/uil-link";
 import Blog from "@iconscout/react-unicons/icons/uil-blogger";
@@ -34,9 +36,9 @@ const Portfolio = () => {
             The website has lots of functionality such as login, signup, homepage, add to cart, coupon code, purchase, payment verified with OTP, and the order success, etc.
           </h4>
           <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >HTML, CSS, JavaScript</label></h4>
-          <a style={{color: darkMode?'white': 'Black'}} className="color" href="https://github.com/PrathyushNair/ToyMarche_clone" target="_blank"><Gitub color="dark" size={"3rem"} /></a>
-          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://62488c87db897540a8152398--subtle-centaur-57e7a8.netlify.app/" target="_blank"><Link color="dark" size={"3rem"} /></a>
-          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://medium.com/@info.coldfired/project-toy-marche-clone-9a66fee38079" target="_blank"><Blog color="dark" size={"3rem"} /></a>
+          <a style={{color: darkMode?'white': 'Black'}} className="color" href="https://github.com/PrathyushNair/ToyMarche_clone" target="_blank"><Gitub style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://62488c87db897540a8152398--subtle-centaur-57e7a8.netlify.app/" target="_blank"><Link style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://medium.com/@info.coldfired/project-toy-marche-clone-9a66fee38079" target="_blank"><Blog style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
           </div>
           </div>
         </SwiperSlide>
@@ -50,9 +52,9 @@ const Portfolio = () => {
           </h4>
           <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >HTML, CSS, JavaScript, Es6, BootStrap</label></h4>
           <div className="box">
-          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://github.com/Devashishsaurabh/KindMeal.my-Clone" target="_blank"><Gitub color="dark" size={"3rem"} /></a>
-          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://lucent-narwhal-b8e29a.netlify.app/" target="_blank"><Link color="dark" size={"3rem"} /></a>
-          <a  style={{color: darkMode?'white': 'Black'}}  className="color" href="https://medium.com/@onlyvishwasindia/project-kindmeal-my-clone-648e86d3e588" target="_blank"><Blog color="dark" size={"3rem"} /></a>
+          <a  style={{color: darkMode?'white': 'Black'}} className="color"href="https://github.com/Devashishsaurabh/KindMeal.my-Clone" target="_blank"><Gitub style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://lucent-narwhal-b8e29a.netlify.app/" target="_blank"><Link style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a  style={{color: darkMode?'white': 'Black'}}  className="color" href="https://medium.com/@onlyvishwasindia/project-kindmeal-my-clone-648e86d3e588" target="_blank"><Blog style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
           </div>
         </div>
         </SwiperSlide>
@@ -64,11 +66,33 @@ const Portfolio = () => {
             <br/>
             The website has lots of functionalities such as User can order food online, user able to Logout, OnClick any Category user to get related foods, user able to get multiple payment methods.
           </h4>
-          <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >HTML, CSS, JavaScript, Es6, BootStrap</label></h4>
+          <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >React, Redux, JavaScript, Es6, ChakraUI</label></h4>
           <div className="box">
-          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://github.com/ayaznoori/kfc_clone" target="_blank"><Gitub color="dark" size={"3rem"} /></a>
-          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://kfc-clone-masai.netlify.app/" target="_blank"><Link color="dark" size={"3rem"} /></a>
-          <a  style={{color: darkMode?'white':'Black'}}  className="color" href="https://medium.com/@onlyvishwasindia/project-kfc-clone-3742f3aba968" target="_blank"><Blog color="dark" size={"3rem"} /></a>
+          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://github.com/ayaznoori/kfc_clone" target="_blank"><Gitub style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://kfc-clone-masai.netlify.app/" target="_blank"><Link style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          <a  style={{color: darkMode?'white':'Black'}}  className="color" href="https://medium.com/@onlyvishwasindia/project-kfc-clone-3742f3aba968" target="_blank"><Blog style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="box1">
+          <img  height="210px"src={youtube} alt="" />
+          <h1>Youtube Clone</h1>
+          <div className="output">
+          <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >HTML, CSS, Advance-JavaScript,</label></h4>
+          <div className="box">
+          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://magical-kringle-1af103.netlify.app/" target="_blank"><Link style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+         
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="box1">
+          <img  height="210px"src={weather} alt="" />
+          <h1>Weather-App Clone</h1>
+          <div className="output">
+          <h4 style={{color:"red"}}>Tech Stack: <label style={{color: darkMode?'white': 'Black'}} >HTML, CSS, Advance-JavaScript,</label></h4>
+          <div className="box">
+          <a style={{color: darkMode?'white': 'Black'}}  className="color" href="https://comforting-kataifi-5cd098.netlify.app/" target="_blank"><Link style={{color: darkMode?'white': 'Black'}} size={"3rem"} /></a>
+         
           </div>
           </div>
         </SwiperSlide>
