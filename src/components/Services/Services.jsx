@@ -55,8 +55,8 @@ const Services = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ left: "-8rem", top: "8rem" }}
-          whileInView={{ left: "2rem" }}
+          initial={{ left: "8rem", top: "8rem" }}
+          whileInView={{ left: "5rem" }}
           transition={transition}
         >
           <Card
